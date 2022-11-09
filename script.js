@@ -1,4 +1,10 @@
 'use strict';
+import './dice-1.png';
+import './dice-2.png';
+import './dice-3.png';
+import './dice-4.png';
+import './dice-5.png';
+import './dice-6.png';
 
 // General
 document.querySelector('.player--active');
