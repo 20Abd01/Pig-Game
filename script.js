@@ -41,7 +41,7 @@ function rollClick() {
   if (diceImg.classList.contains('hidden')) diceImg.classList.remove('hidden');
   var rollDice = Math.trunc(Math.random() * 6 + 1);
   if (playerOne.classList.contains('player--active')) {
-    diceImg.src = `dice-${rollDice}.png`;
+    diceImg.src = `./dice-${rollDice}.png`;
     // player 1
     if (rollDice === 1) {
       currentPlayerOne.textContent = 0;
@@ -52,7 +52,7 @@ function rollClick() {
     }
   } else {
     // player 2
-    diceImg.src = `dice-${rollDice}.png`;
+    diceImg.src = `./dice-${rollDice}.png`;
     if (rollDice === 1) {
       currentPlayerTwo.textContent = 0;
       holdClick();
