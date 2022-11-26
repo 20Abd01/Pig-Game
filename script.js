@@ -36,7 +36,7 @@ function resetGame() {
   currentPlayerTwo.textContent = 0;
   scorePlayerTwo.textContent = 0;
   playerOne.style.backgroundColor = '#fff6';
-  playerTwo.style.backgroundColor = '#333';
+  playerTwo.style.backgroundColor = '#fff6';
   document.querySelector('.btn--roll').disabled = false;
   document.querySelector('.btn--hold').disabled = false;
 
