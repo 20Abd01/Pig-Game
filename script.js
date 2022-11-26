@@ -35,10 +35,13 @@ function resetGame() {
   scorePlayerOne.textContent = 0;
   currentPlayerTwo.textContent = 0;
   scorePlayerTwo.textContent = 0;
-  playerOne.style.backgroundColor = '#fff6';
-  playerTwo.style.backgroundColor = '#fff6';
   document.querySelector('.btn--roll').disabled = false;
   document.querySelector('.btn--hold').disabled = false;
+
+  playerOne.classList.remove('player--winner');
+  playerTwo.classList.remove('player--winner');
+  playerOne.classList.add('player--active');
+  playerTwo.classList.remove('player--active');
 
   if (!playerOne.classList.contains('player--active')) {
     playerOne.classList.add('player--active');
