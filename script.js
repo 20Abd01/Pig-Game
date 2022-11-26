@@ -5,6 +5,13 @@ import './dice-3.png';
 import './dice-4.png';
 import './dice-5.png';
 import './dice-6.png';
+var dice1Png = require('./dice-1.png');
+var dice2Png = require('./dice-2.png');
+var dice3Png = require('./dice-3.png');
+var dice4Png = require('./dice-4.png');
+var dice5Png = require('./dice-5.png');
+var dice6Png = require('./dice-6.png');
+var arr = [0, dice1Png, dice2Png, dice3Png, dice4Png, dice5Png, dice6Png];
 
 // General
 document.querySelector('.player--active');
@@ -42,7 +49,7 @@ function rollClick() {
   if (diceImg.classList.contains('hidden')) diceImg.classList.remove('hidden');
   var rollDice = Math.trunc(Math.random() * 6 + 1);
   if (playerOne.classList.contains('player--active')) {
-    diceImg.src = `./dice-${rollDice + '' + rollDice}.png`;
+    diceImg.src = `${arr[rollDice]}`;
     // player 1
     if (rollDice === 1) {
       currentPlayerOne.textContent = 0;
@@ -53,7 +60,7 @@ function rollClick() {
     }
   } else {
     // player 2
-    diceImg.src = `./dice-${rollDice + '' + rollDice}.png`;
+    diceImg.src = `${arr[rollDice]}`;
     if (rollDice === 1) {
       currentPlayerTwo.textContent = 0;
       holdClick();
