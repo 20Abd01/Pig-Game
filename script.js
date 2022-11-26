@@ -35,6 +35,10 @@ function resetGame() {
   scorePlayerOne.textContent = 0;
   currentPlayerTwo.textContent = 0;
   scorePlayerTwo.textContent = 0;
+  playerOne.style.backgroundColor = '#fff6';
+  playerTwo.style.backgroundColor = '#333';
+  document.querySelector('.btn--roll').disabled = false;
+  document.querySelector('.btn--hold').disabled = false;
 
   if (!playerOne.classList.contains('player--active')) {
     playerOne.classList.add('player--active');
