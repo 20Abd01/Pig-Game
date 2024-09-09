@@ -1,36 +1,55 @@
-Pig Game
-The Pig Game is a simple two-player game where each player rolls a dice and accumulates points. The goal is to reach 100 points before your opponent. If a player rolls a 1, their current round's score is lost, and it's the next player's turn. Players can also choose to hold their current score, which adds it to their total score, but ends their turn.
+# Pig Game 🎲
 
-Features
-Two-player turn-based gameplay.
-Dice rolls with random numbers between 1 and 6.
-Players can either roll the dice or hold their current score.
-First player to reach 100 points wins the game.
-Reset button to start a new game.
+A fun two-player game where the goal is to reach 100 points by rolling dice. Each player rolls a dice and accumulates points, but rolling a 1 causes them to lose their current score and pass the turn to the next player. 
 
-Rules
-1. Roll Dice: If a player rolls a number between 2 and 6, it is added to their current round score. Rolling a 1 loses the current round’s points, and the turn switches to the next player.
-2. Hold: Players can hold their score, adding the current round score to their total score and passing the turn to the next player.
-3. Win Condition: The first player to accumulate 100 points or more wins the game.
+## Features
+- Two-player turn-based gameplay.
+- Random dice roll between 1 and 6.
+- "Hold" functionality to save your score and pass the turn.
+- First player to reach 100 points wins.
+- Reset functionality to play again.
+- Simple and intuitive UI.
 
-Technologies Used
-HTML5: For structuring the content of the game.
-CSS3: For styling the game interface.
-JavaScript (ES6): For implementing game logic, handling user inputs, and updating the game state dynamically.
+## Demo
 
-How to Run
-Clone the repository:
-git clone https://github.com/20Abd01/pig-game.git
-Open the index.html file in a web browser.
+Check out the live version of the game on Netlify:
 
-How to Play
-1. Open the game in your browser.
-2. Player 1 starts the game.
-3. Click "🎲 Roll dice" to roll a random number between 1 and 6.
-4. If the dice shows 1, the current score is lost and the turn switches to the next player.
-5. Click "📥 Hold" to add your current score to the total score and switch the turn.
-6. First player to reach 100 points wins the game.
-7. To restart, click the "🔄 New game" button.
+[**Play Pig Game!**](https://abd-dice-game.netlify.app/)
 
-Credits
-Created by Abdalrahman Alyacoub.
+## Installation
+
+To run this project locally:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/20Abd01/pig-game.git
+    ```
+   
+2. Navigate to the project folder:
+    ```bash
+    cd pig-game
+    ```
+
+3. Open `index.html` in your browser to play the game locally.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Netlify for deployment
+
+## How to Play
+
+1. Player 1 starts the game by clicking the "🎲 Roll dice" button.
+2. If the dice shows a number between 2 and 6, it's added to the current score.
+3. If the dice shows 1, the current round's score is lost and it's the next player's turn.
+4. Click "📥 Hold" to save your current score and switch the turn.
+5. The first player to accumulate 100 points wins the game.
+6. Click the "🔄 New game" button to reset and start a new game.
+
+## Author
+
+Created by **Abdalrahman AlYacoub** – [LinkedIn](https://www.linkedin.com/in/abdalrahman-al-yacoub-1642a3203/).
+
+Feel free to contribute or report any issues via GitHub!
