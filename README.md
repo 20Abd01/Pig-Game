@@ -14,7 +14,7 @@ A fun two-player game where the goal is to reach 100 points by rolling dice. Eac
 
 Check out the live version of the game on Netlify:
 
-[**Play Pig Game!**](https://abd-dice-game.netlify.app/)
+[**Play Pig Game!**](https://abuhoney-dice-game.netlify.app/)
 
 ## Installation
 
