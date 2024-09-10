@@ -102,16 +102,14 @@ main {
 }
 .my {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #444;
+  top: calc(100% - 50px);
+  color: #111;
   background: none;
   border: none;
   font-family: inherit;
   font-size: 1.8rem;
   text-transform: uppercase;
   transition: all 0.2s;
-  top: 55rem;
   font-weight: 900;
 }
 /* ABSOLUTE POSITIONED ELEMENTS */
@@ -179,4 +177,116 @@ main {
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+@media (max-width: 299px) {
+  * {
+    font-size: 0.5rem !important;
+  }
+  .player {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 300px) {
+  * {
+    font-size: 0.75rem !important;
+  }
+  .player {
+    padding: 2rem;
+  }
+  main {
+    width: 40rem;
+    height: 25rem;
+  }
+  .dice {
+    height: 3rem;
+    top: 8rem;
+
+    /* default 10rem */
+  }
+  .btn--new {
+    top: 1rem;
+    padding: 0.2rem 1rem;
+  }
+  .btn--roll {
+    top: 18rem;
+    padding: 0.2rem 1rem;
+  }
+  .btn--hold {
+    top: 14rem;
+    padding: 0.2rem 1rem;
+  }
+
+  .current {
+    width: 50%;
+    padding: 1.2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  * {
+    font-size: 0.8rem !important;
+  }
+  .player {
+    padding: 2.5rem;
+  }
+  main {
+    width: 50rem;
+    height: 35rem;
+  }
+  .dice {
+    height: 5rem;
+    top: 16.5rem;
+    /* default 10rem */
+  }
+  .btn--new {
+    top: 4rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .btn--roll {
+    top: 24rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .btn--hold {
+    top: 30rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .current {
+    width: 50%;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  * {
+    font-size: 1rem !important;
+  }
+
+  .player {
+    padding: 3rem;
+  }
+
+  main {
+    width: 60rem;
+    height: 50rem;
+  }
+
+  .btn--roll {
+    top: 30rem;
+  }
+  .btn--hold {
+    top: 36rem;
+  }
+
+  .dice {
+    height: 8rem;
+    /* default 10rem */
+  }
+
+  .current {
+    width: 65%;
+    padding: 2rem;
+  }
 }
