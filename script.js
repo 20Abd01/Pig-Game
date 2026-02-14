@@ -43,6 +43,9 @@ function resetGame() {
   playerOne.classList.add('player--active');
   playerTwo.classList.remove('player--active');
 
+  playerOne.style.backgroundColor = "";
+  playerTwo.style.backgroundColor = "";
+
   if (!playerOne.classList.contains('player--active')) {
     playerOne.classList.add('player--active');
     playerTwo.classList.remove('player--active');
@@ -99,7 +102,7 @@ function holdClick() {
     scorePlayerTwo.textContent = finalScore2;
     if (Number(scorePlayerTwo.textContent) >= 100) {
       disabledButton();
-      playerOne.style.backgroundColor = '#2f2f2f';
+      playerTwo.style.backgroundColor = '#2f2f2f';
       diceImg.classList.add('hidden');
     } else {
       currentPlayerTwo.textContent = 0;
